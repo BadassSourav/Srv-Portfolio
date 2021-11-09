@@ -1,0 +1,516 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #111;
+}
+::-webkit-scrollbar-thumb {
+  background: crimson;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* Navbar Settings */
+.navbar-toggler {
+  /* position: fixed; */
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  margin-left: 200px;
+}
+.navbar-brand {
+  display: flex;
+  flex: 25%;
+  max-width: 25%;
+  margin-top: 10px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 35px;
+  padding-left: 157px;
+}
+.nav-item {
+  color: #fff;
+  padding-right: 5%;
+}
+.nav-link {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+}
+
+/* Name and Intro Settings */
+
+#home {
+  /* max-width: 100%; */
+  /* flex-basis: auto; */
+  /* flex-wrap: wrap; */
+  background: url(https://codingnepalweb.com/demos/responsive-portfolio-website/images/banner.jpg)
+    no-repeat center fixed;
+  background-size: cover;
+}
+.name {
+  color: #fff;
+  padding: 15% 0 0 10%;
+}
+.hello {
+  margin-bottom: 5px;
+}
+.display-3 {
+  font-weight: 400;
+}
+
+.btn {
+  padding: 1% 3% 1% 3%;
+  background-color: crimson;
+  font-size: 23px;
+  font-family: "Ubuntu", sans-serif;
+  color: #fff;
+  border-radius: 10px;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  color: crimson;
+  background-image: none !important;
+  background-color: transparent !important;
+}
+
+/* Typewriter Effect */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap'); */
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Poppins', sans-serif; */
+/* } */
+body {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.wrapper {
+  display: flex;
+  font-family: "Ubuntu", sans-serif;
+}
+/* @media (max-width: 2px) {
+  .wrapper {
+    flex-direction: column;
+  }
+} */
+.wrapper .static-txt {
+  color: #fff;
+  margin-top: 13px;
+  font-size: 50px;
+  font-weight: 400;
+}
+.wrapper .dynamic-txts {
+  margin-left: 15px;
+  margin-bottom: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.dynamic-txts li {
+  list-style: none;
+  color: crimson;
+  font-size: 50px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100% {
+    top: -405px;
+  }
+}
+.dynamic-txts li span {
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.dynamic-txts li span::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url(https://codingnepalweb.com/demos/responsive-portfolio-website/images/banner.jpg);
+  /* background-color: black; */
+  border-left: 2px solid crimson;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%,
+  60% {
+    left: calc(100% + 30px);
+  }
+  100% {
+    left: 0;
+  }
+}
+
+/* About Me */
+.about {
+  /* display: flex;
+  flex-wrap: wrap; */
+  text-align: center;
+  margin-top: 50px;
+}
+.title{
+  font-family: "Ubuntu", sans-serif;
+}
+h5:before,
+h5:after {
+  border-top: 3px solid black;
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 5%;
+}
+h5:before {
+  right: 4px;
+  margin-left: -5%;
+  width: 2%;
+}
+
+h5:after {
+  /* bottom: 0em; */
+  left: 4px;
+  margin-right: -10%;
+  width: 2%;
+}
+.about-content {
+  margin-top: 7%;
+}
+.my-img {
+  width: 250px;
+  border-radius: 6px;
+  float: left;
+  margin-top: -15px;
+  margin-left: 18%;
+  margin-bottom: 25%;
+  /* height: 100px; */
+}
+.text {
+  /* width: 5%; */
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  margin-top: 90px;
+  font-size: 20px;
+}
+.btn-2 {
+  padding: 1% 3% 1% 3%;
+  background-color: crimson;
+  font-size: 18px;
+  font-family: "Ubuntu", sans-serif;
+  color: #fff;
+  border-radius: 10px;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+  margin-left: 4%;
+}
+.btn-2:hover {
+  color: crimson;
+  background-image: none !important;
+  background-color: transparent !important;
+}
+.wrapper2 {
+  margin-left: 38%;
+  display: flex;
+  /* font-family: "Ubuntu", sans-serif; */
+}
+/* @media (max-width: 2px) {
+  .wrapper {
+    flex-direction: column;
+  }
+} */
+.wrapper2 .static-txt {
+  color: #fff;
+  margin-top: 13px;
+  font-size: 25px;
+  font-weight: 700;
+}
+.wrapper2 .dynamic-txt {
+  margin-left: 15px;
+  margin-bottom: 6px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.dynamic-txt li {
+  list-style: none;
+  color: crimson;
+  font-size: 25px;
+  font-weight: 700;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100% {
+    top: -405px;
+  }
+}
+.dynamic-txt li span {
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.dynamic-txt li span::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /* background: url(https://codingnepalweb.com/demos/responsive-portfolio-website/images/banner.jpg); */
+  background-color: white;
+  border-left: 2px solid crimson;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%,
+  60% {
+    left: calc(100% + 30px);
+  }
+  100% {
+    left: 0;
+  }
+}
+
+/* Projects Section */
+.serv-div {
+  width: 100%;
+  height: 1075%;
+}
+.srv-title {
+  font-family: "Ubuntu", sans-serif;
+  margin-left: 43%;
+  padding-top: 5%;
+}
+
+.container {
+  margin: 2% 30% 0 0 ;
+  padding-top: 5%;
+  /* padding-left: 25%; */
+  margin-bottom: 5%;
+}
+.card{
+  margin-right: 6%;
+}
+h5.srv:before,
+h5.srv:after {
+  border-top: 3px solid white;
+  background-color: #fff;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 5%;
+}
+h5.srv:before {
+  right: 4px;
+  margin-left: 9%;
+  width: 2%;
+}
+
+h5.srv:after {
+  /* bottom: 0em; */
+  left: 4px;
+  margin-right: -10%;
+  width: 2%;
+}
+.features{
+  text-align: left;
+  padding: 15%;
+}
+.fas{
+  color: white;
+
+}
+.projects{
+  margin-top: 3%;
+  margin-bottom: 5%;
+  padding-bottom: 5%;
+  font-family: "Poppins", sans-serif;
+}
+.project1{
+  border: solid #222;
+  border-radius: 6px;
+  color: white;
+  background-color: #222;
+  padding: 5%;
+  margin-left: -20%;
+}
+.project1:hover{
+  border: solid crimson;
+  color: white;
+  background-color: crimson;
+  transition: all .3s ease;
+}
+.project2{
+  border: solid #222;
+  border-radius: 6px;
+  color: white;
+  background-color: #222;
+  padding: 5%;
+  margin-left: 7%;
+}
+.project2:hover{
+  border: solid crimson;
+  color: white;
+  background-color: crimson;
+  transition: all .3s ease;
+}
+.project3{
+  border: solid #222;
+  border-radius: 6px;
+  color: white;
+  background-color: #222;
+  padding: 5%;
+  margin-left: 7%;
+}
+.project3:hover{
+  border: solid crimson;
+  color: white;
+  background-color: crimson;
+  transition: all .3s ease;
+}
+.desc{
+  margin-top: 13px;
+  /* margin-left: 15px; */
+}
+.pname{
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+/* Skills Section */
+.skill-div{
+  margin-left: 46%;
+  font-family: "Ubuntu", sans-serif;
+}
+.w-i-k:before,
+.w-i-k:after {
+  border-top: 3px solid black;
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 5%;
+}
+.w-i-k:before {
+  right: 4px;
+  margin-left: -5%;
+  width: 5%;
+}
+
+.w-i-k:after {
+  /* bottom: 0em; */
+  left: 4px;
+  margin-right: -10%;
+  width: 5%;
+}
+.exp{
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  margin-bottom: 9%;
+}
+
+/* Progress Bar */
+.progress-bar{
+  margin-left: 10px;
+  height: 30%;
+  margin-top: 5px;
+  
+}
+.progress{
+  background-color: white;
+  width:100%;
+}
+.info{
+  margin-left:10px;
+}
+.html{
+  background: linear-gradient(to right, crimson 0%, crimson   80%, #f1f1f1 80%, #f1f1f1 100%);
+}
+.css{
+  background: linear-gradient(to right, crimson 0%, crimson   60%, #f1f1f1 60%, #f1f1f1 100%);
+}
+.js{
+  background: linear-gradient(to right, crimson 0%, crimson   75%, #f1f1f1 75%, #f1f1f1 100%);
+}
+.java{
+  background: linear-gradient(to right, crimson 0%, crimson   85%, #f1f1f1 85%, #f1f1f1 100%);
+}
+.bar{
+  margin-top: -18.5%;
+  margin-left: 45%;
+}
+
+/* Contact Section */
+.contact{
+  background-color: #111;
+}
+/* .contact-me{
+  margin-bottom: 5%;
+} */
+h5.g-i-t:before,
+h5.g-i-t:after {
+  border-top: 3px solid white;
+  background-color: #fff;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 5%;
+}
+h5.g-i-t:before {
+  right: 4px;
+  margin-left: 9%;
+  width: 4%;
+}
+
+h5.g-i-t:after {
+  /* bottom: 0em; */
+  left: 4px;
+  margin-right: -10%;
+  width: 4%;
+}
+.con-info{
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding-bottom: 10%;
+}
+input[type="name"] {  
+  width: 15%;
+  display: inline-block;
+  margin-left:55%; 
+  border: 1px solid white;
+  border-radius: 7px;
+  height: 40px;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  padding-left: 10px;
+  /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  padding-left: 10px;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  padding-left: 10px;
+}
+.msg-field::-webkit-input-placeholder {
+  margin-left: 50%;
+}
