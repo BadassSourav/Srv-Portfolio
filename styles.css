@@ -353,6 +353,7 @@ h5.srv:after {
   color: white;
   background-color: crimson;
   transition: all .3s ease;
+  cursor: pointer;
 }
 .project2{
   border: solid #222;
@@ -367,6 +368,7 @@ h5.srv:after {
   color: white;
   background-color: crimson;
   transition: all .3s ease;
+  cursor: pointer;
 }
 .project3{
   border: solid #222;
@@ -381,6 +383,7 @@ h5.srv:after {
   color: white;
   background-color: crimson;
   transition: all .3s ease;
+  cursor: pointer;
 }
 .desc{
   margin-top: 13px;
